@@ -6,12 +6,12 @@ This library will simplify the work on creating a website in the style of materi
 
 What is already in the library ? 
 ---
-Components      |
-----------------|
-Input           |
-Button          |
-Checkbox        |
-Ripple-Effect   |
+Components      | Condition
+----------------|----------------------
+Input           | -
+Button          | +
+Checkbox        | -
+Ripple-Effect   | +
 #
 **RU**
 ---
@@ -19,9 +19,9 @@ Ripple-Effect   |
 
 Что уже находится в библиотеке ? 
 ---
-Компоненты      | Название
+Компоненты      | Состояние
 ----------------|----------------------
-Input           | Поля ввода
-Button          | Кнопки
-Checkbox        | Флажки
-Ripple-Effect   | Волновой эффект
+Input           | -
+Button          | +
+Checkbox        | -
+Ripple-Effect   | +
