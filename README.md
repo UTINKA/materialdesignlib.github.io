@@ -1,4 +1,4 @@
-# Material Design Library
+# Material Design Library (Development)
 
 [View Demo](https://utinka.github.io/materialdesignlib.github.io/)
 
