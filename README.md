@@ -13,6 +13,7 @@ Components      | Condition
 Input           | -
 Button          | +
 Checkbox        | -
+Blocks		    | +
 Ripple-Effect   | +
 #
 **RU**
@@ -26,4 +27,5 @@ Ripple-Effect   | +
 Input           | -
 Button          | +
 Checkbox        | -
+Blocks		    | +
 Ripple-Effect   | +
