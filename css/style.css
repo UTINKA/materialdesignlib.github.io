@@ -18,6 +18,7 @@ body{
     width: 100%;
     height: 50px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
 }
 
 .menu .menus{
@@ -129,6 +130,26 @@ body{
 	background-color: #ababab;
 }
 
+/* info-box */
+.pod-menu-info-box{
+	position: fixed;
+    z-index: 98;
+    display: block;
+    background-color: #2196f3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 20px;
+    top: 0px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+	transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.pod-menu-info-box center{
+	opacity: 0;
+	color: #ffffff;
+    font-size: 20px;
+    transition: 0.5s;
+}
 
 /* help panel down */
 .helppaneldown{
@@ -136,7 +157,7 @@ body{
     bottom: 0;
     position: fixed;
     width: 90%;
-    height: 50px;
+    height: 0px;
     margin-left: 5%;
     background-color: #ffffff;
 	box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.5);
@@ -153,9 +174,42 @@ body{
     background-color: #2196F3;
 }
 
+.helppaneldown header .colors{
+	user-select: none;
+	margin-left: 20px;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+}
+.helppaneldown header .colors .colorone, .colortwo{
+	vertical-align: top;
+	display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+	margin: 0px 3px;
+	transition: 0.5s;
+}
+.helppaneldown header .colors .colorone{
+	background-color: #ffffff;
+	color:#000000;
+}
+.helppaneldown header .colors .colortwo{
+    background-color: #000000;
+	color:#ffffff;
+}
+.helppaneldown header .colors .colorone div, .colortwo div{
+	vertical-align: top;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 3px;
+}
+
 .helppaneldown header .icon{
 	float: left;
-    width: 20%;
+    width: 50%;
     height: 30px;
     color: #000;
     padding: 10px;
@@ -163,7 +217,10 @@ body{
 }
 
 .helppaneldown header .icon i{
-	color: #ffffff;
+	float: left;
+    padding: 4px;
+    display: block;
+    color: #ffffff;
     user-select: none;
 }
 .helppaneldown header .icon label{
@@ -174,6 +231,7 @@ body{
 }
 
 .helppaneldown header .right{
+	cursor: pointer;
     float: right;
     width: 60px;
     height: 50px;
@@ -186,9 +244,6 @@ body{
 	padding: 5px 10px 10px 10px;
 	color: #ffffff;
 	transition: 0.5s;
-}
-.helppaneldown header .right a:hover{
-	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .helppaneldown header .right a i{
