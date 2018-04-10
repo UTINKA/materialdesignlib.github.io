@@ -164,6 +164,31 @@ body{
 	transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.helppaneldown .info-block-left{
+	float: left;
+    display: block;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.helppaneldown .info-block-right{
+	float: right;
+    display: block;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.helppaneldown .info-block-left label{
+	color: #F44336;
+}
+.helppaneldown .info-block-right label{
+	color: #4CAF50;
+}
+
 /* ripple-color click */
 .helppaneldown .ripl{
 	background-color: #1976D2;
