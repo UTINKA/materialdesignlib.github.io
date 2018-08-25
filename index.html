@@ -1,1408 +1,303 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!--link rel="shortcut icon" href="icon.png" /-->
-	
-	<link rel="stylesheet" href="css/font.css" type="text/css" />
-	<link rel="stylesheet" href="css/icons.css" type="text/css" />
-	<link rel="stylesheet" href="css/clear-all.css" type="text/css" />
-	<!-- Material Design Lib -->
-	<link rel="stylesheet" href="css/material-design-lib/input.css" type="text/css" />
-	<link rel="stylesheet" href="css/material-design-lib/button.css" type="text/css" />
-	<link rel="stylesheet" href="css/material-design-lib/checkbox.css" type="text/css" />
-	<link rel="stylesheet" href="css/material-design-lib/ripple-effect.css" type="text/css" />
-	<!-- Material Design Lib -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	
 	<title>Material Design Library</title>
-	<!-- JS -->
-	<script type="text/javascript" src="js/jquery.js"></script> 
-	<script type="text/javascript">
-	window.onload = function() 
-	{
-		document.body.style.opacity = '1';
-	};
-	</script>
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/icons.css">
+	<link rel="stylesheet" href="css/style.css">	
+	<!-- mdlib  -->
+	<link rel="stylesheet" href="css/material-design-lib/ripple-effect.css">	
+	<!-- mdlib -->	
+	<script type="text/javascript" src="js/jquery.js"></script>
 </head>
-	<body>
-		<div class="leftmenu-owerlay" id="leftmenu-owerlay-id">
-			<div class="leftmenu" id="leftmenu-id">
-				<header>
-					<i href="#" class="hideleftmenu material-icons ripple-effect">keyboard_backspace</i>
-				</header>
-				<ul>
-					<a href="/materialdesignlib.github.io/" class="ripple-effect">Icons</a>
-					<a href="/materialdesignlib.github.io/input.html" class="ripple-effect">Inputs</a>
-					<a href="/materialdesignlib.github.io/button.html" class="ripple-effect">Buttons</a>
-					<a href="/materialdesignlib.github.io/checkbox.html" class="ripple-effect">Checkboxs</a>
-					<a href="/materialdesignlib.github.io/blocks.html" class="ripple-effect">Blocks</a>
-					<a href="/materialdesignlib.github.io/loader.html" class="ripple-effect">Loaders</a>
-				</ul>
+<body>
+	<div class="overlay"></div>
+	<div class="left_menu">
+		<div class="head">
+			<a class="back ripple-effect"><i class="material-icons">arrow_back</i></a>
+			<label>Icons</label>
+		</div>
+		<div class="links">
+			<a href="#" class="ripple-effect">
+				<i class="material-icons">widgets</i>
+				<label>Icons</label>
+			</a>
+		</div>
+	</div>
+	<div class="up_menu">
+		<a class="menu ripple-effect">
+			<i class="material-icons">menu</i>
+		</a>
+		<label class="logo">Material Design Library</label>
+		<div class="search">
+			<a class="button_in_search ripple-effect">
+				<i class="material-icons">search</i>
+			</a>
+			<input type="text" class="in_search">
+		</div >
+	</div>
+	<div class="content">
+		<div class="left">
+			<div class="icon_box">
+				<div class="background_icon">
+					<i class="material-icons">search</i>
+				</div>
+				<div class="info">
+					<span>search</span>
+				</div>
 			</div>
-		</div>
-		<div class="menu">
-			<i class="menus material-icons ripple-effect">menu</i>
-			<span>Material Design Library</span>
-			
-		</div>
-		<div class="pod-menu-info-box">
-			<center class="pod-menu-info-box-text">Action</center>
-		</div>
-		<!-- help panel -->
-		<div id="helppaneldownid" class="helppaneldown">
-			<header class="helppaneldownclass">
-				<div class="icon">
-					<i class="material-icons helppaneldown-icon-itext-class">3d_rotation</i>
-					<label class="helppaneldown-icon-text-class">3d rotation</label>
+			<div class="colors_box">
+				<div class="head">
+					<a class="one">Icon Color</a>
+					<a class="two">Background Color</a>
+					<span></span>
+				</div>
+				<div class="t_one">
 					<div class="colors">
-						<a class="colorone"><div class="material-icons">done</div></a>
-						<a class="colortwo"></a>
+						<a style="background:#ffffff;"></a>
+						<a style="background:#000000;"></a>
+						<a style="background:#f44336;"></a>
+						<a style="background:#e91e63;"></a>
+						<a style="background:#9c27b0;"></a>
+						<a style="background:#673ab7;"></a>
+						<a style="background:#3f51b5;"></a>
+						<a style="background:#2196f3;"></a>
+						<a style="background:#03a9f4;"></a>
+						<a style="background:#00bcd4;"></a>
+						<a style="background:#009688;"></a>
+						<a style="background:#4caf50;"></a>
+						<a style="background:#8bc34a;"></a>
+						<a style="background:#cddc39;"></a>
+						<a style="background:#ffeb3b;"></a>
+						<a style="background:#ffc107;"></a>
+						<a style="background:#ff9800;"></a>
+						<a style="background:#ff5722;"></a>
+						<a style="background:#795548;"></a>
+						<a style="background:#9e9e9e;"></a>
+						<a style="background:#607d8b;"></a>
 					</div>
 				</div>
-				
-				<div class="right ripple-effect" id="helppaneldown-button">
-					<a><i class="material-icons" id="helppaneldownid-button">keyboard_arrow_up</i></a>
+				<div class="t_two">
+					<div class="colors">
+						<a style="background:#ffffff;"></a>
+						<a style="background:#000000;"></a>
+						<a style="background:#f44336;"></a>
+						<a style="background:#e91e63;"></a>
+						<a style="background:#9c27b0;"></a>
+						<a style="background:#673ab7;"></a>
+						<a style="background:#3f51b5;"></a>
+						<a style="background:#2196f3;"></a>
+						<a style="background:#03a9f4;"></a>
+						<a style="background:#00bcd4;"></a>
+						<a style="background:#009688;"></a>
+						<a style="background:#4caf50;"></a>
+						<a style="background:#8bc34a;"></a>
+						<a style="background:#cddc39;"></a>
+						<a style="background:#ffeb3b;"></a>
+						<a style="background:#ffc107;"></a>
+						<a style="background:#ff9800;"></a>
+						<a style="background:#ff5722;"></a>
+						<a style="background:#795548;"></a>
+						<a style="background:#9e9e9e;"></a>
+						<a style="background:#607d8b;"></a>
+					</div>
 				</div>
-			</header>
-			<div class="info-block-left">
-				<label>Step 1 - Connecting CSS to use icons</label>
-				<p>
-				Insert this year into the &lt;head&gt; tag<br/>
-				<span>&lt;link rel="stylesheet" href="https://utinka.github.io/materialdesignlib.github.io/css/font.css" type="text/css" /&gt;</span>
-				</p>
-			</div>
-			<div class="info-block-right">
-				<label>Step  2</label>
-				<span>
-				
-				</span>
 			</div>
 		</div>
-		<!-- blocks -->
-		<div class="blocks">
-			<!-- Icons Font -->
-			<!-- Action -->
-			<div class="block">
-				<div class="infoblock">
-					<span id="bAction">Action</span>
-				</div>
-				<div class="content">
-					<div class="icon ripple-effect icon-class" id="icon_0">
-						<i class="material-icons" id="icon_0_itext">3d_rotation</i>
-						<div class="bottom"><span id="icon_0_text">3d rotation</span></div>
-					</div>
-					<div class="icon ripple-effect" id="icon_1">
-						<i class="material-icons" id="icon_1_itext">accessibility</i>
-						<div class="bottom"><span id="icon_1_text">accessibility</span></div>
-					</div>
-					<div class="icon ripple-effect" id="icon_2">
-						<i class="material-icons" id="icon_2_itext">accessible</i>
-						<div class="bottom"><span id="icon_2_text">accessible</span></div>
-					</div>
-					<div class="icon ripple-effect" id="icon_3">
-						<i class="material-icons" id="icon_3_itext">account_balance</i>
-						<div class="bottom"><span id="icon_3_text">account balance</span></div>
-					</div>
-					<div class="icon ripple-effect" id="icon_4">
-						<i class="material-icons" id="icon_4_itext">account_balance_wallet</i>
-						<div class="bottom"><span id="icon_4_text">account balance wallet</span></div>
-					</div>
-					<div class="icon ripple-effect" id="icon_5">
-						<i class="material-icons" id="icon_5_itext">account_box</i>
-						<div class="bottom"><span id="icon_5_text">account box</span></div>
-					</div>
-					<div class="icon ripple-effect" id="icon_6">
-						<i class="material-icons" id="icon_6_itext">account_circle</i>
-						<div class="bottom"><span id="icon_6_text">account circle</span></div>
-					</div>
-					<div class="icon ripple-effect" id="icon_7">
-						<i class="material-icons" id="icon_7_itext">add_shopping_cart</i>
-						<div class="bottom"><span id="icon_7_text">add shopping cart</span></div>
-					</div>
-					<div class="icon ripple-effect" id="icon_8">
-						<i class="material-icons" id="icon_8_itext">alarm</i>
-						<div class="bottom"><span id="icon_8_text">alarm</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">alarm_add</i>
-						<div class="bottom"><span>alarm add</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">alarm_off</i>
-						<div class="bottom"><span>alarm off</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">alarm_on</i>
-						<div class="bottom"><span>alarm on</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">all_out</i>
-						<div class="bottom"><span>all out</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">android</i>
-						<div class="bottom"><span>android</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">announcement</i>
-						<div class="bottom"><span>announcement</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">aspect_ratio</i>
-						<div class="bottom"><span>aspect ratio</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">assessment</i>
-						<div class="bottom"><span>assessment</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">assignment</i>
-						<div class="bottom"><span>assignment</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">assignment_ind</i>
-						<div class="bottom"><span>assignment ind</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">assignment_late</i>
-						<div class="bottom"><span>assignment late</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">assignment_return</i>
-						<div class="bottom"><span>assignment return</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">assignment_returned</i>
-						<div class="bottom"><span>assignment returned</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">assignment_turned_in</i>
-						<div class="bottom"><span>assignment turned in</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">autorenew</i>
-						<div class="bottom"><span>autorenew</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">backup</i>
-						<div class="bottom"><span>backup</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">book</i>
-						<div class="bottom"><span>book</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">bookmark</i>
-						<div class="bottom"><span>bookmark</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">bookmark_border</i>
-						<div class="bottom"><span>bookmark border</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">bug_report</i>
-						<div class="bottom"><span>bug report</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">build</i>
-						<div class="bottom"><span>build</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">cached</i>
-						<div class="bottom"><span>cached</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">camera_enhance</i>
-						<div class="bottom"><span>camera enhance</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">card_giftcard</i>
-						<div class="bottom"><span>card giftcard</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">card_membership</i>
-						<div class="bottom"><span>card membership</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">card_travel</i>
-						<div class="bottom"><span>card travel</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">change_history</i>
-						<div class="bottom"><span>change history</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">check_circle</i>
-						<div class="bottom"><span>check circle</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">chrome_reader_mode</i>
-						<div class="bottom"><span>chrome reader mode</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">class</i>
-						<div class="bottom"><span>class</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">code</i>
-						<div class="bottom"><span>code</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">compare_arrows</i>
-						<div class="bottom"><span>compare arrows</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">copyright</i>
-						<div class="bottom"><span>copyright</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">credit_card</i>
-						<div class="bottom"><span>credit card</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">dashboard</i>
-						<div class="bottom"><span>dashboard</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">date_range</i>
-						<div class="bottom"><span>date range</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">delete</i>
-						<div class="bottom"><span>delete</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">delete_forever</i>
-						<div class="bottom"><span>delete forever</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">description</i>
-						<div class="bottom"><span>description</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">dns</i>
-						<div class="bottom"><span>dns</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">done</i>
-						<div class="bottom"><span>done</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">done_all</i>
-						<div class="bottom"><span>done all</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">donut_large</i>
-						<div class="bottom"><span>donut large</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">donut_small</i>
-						<div class="bottom"><span>donut small</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">eject</i>
-						<div class="bottom"><span>eject</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">euro_symbol</i>
-						<div class="bottom"><span>euro symbol</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">event</i>
-						<div class="bottom"><span>event</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">event_seat</i>
-						<div class="bottom"><span>event seat</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">exit_to_app</i>
-						<div class="bottom"><span>exit to app</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">explore</i>
-						<div class="bottom"><span>explore</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">extension</i>
-						<div class="bottom"><span>extension</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">face</i>
-						<div class="bottom"><span>face</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">favorite</i>
-						<div class="bottom"><span>favorite</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">favorite_border</i>
-						<div class="bottom"><span>favorite border</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">feedback</i>
-						<div class="bottom"><span>feedback</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">find_in_page</i>
-						<div class="bottom"><span>find in page</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">find_replace</i>
-						<div class="bottom"><span>find replace</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">fingerprint</i>
-						<div class="bottom"><span>fingerprint</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">flight_land</i>
-						<div class="bottom"><span>flight land</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">flight_takeoff</i>
-						<div class="bottom"><span>flight takeoff</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">flip_to_back</i>
-						<div class="bottom"><span>flip to back</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">flip_to_front</i>
-						<div class="bottom"><span>flip to front</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">g_translate</i>
-						<div class="bottom"><span>g translate</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">gavel</i>
-						<div class="bottom"><span>gavel</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">get_app</i>
-						<div class="bottom"><span>get app</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">gif</i>
-						<div class="bottom"><span>gif</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">grade</i>
-						<div class="bottom"><span>grade</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">group_work</i>
-						<div class="bottom"><span>group work</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">help</i>
-						<div class="bottom"><span>help</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">help_outline</i>
-						<div class="bottom"><span>help outline</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">highlight_off</i>
-						<div class="bottom"><span>highlight off</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">history</i>
-						<div class="bottom"><span>history</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">home</i>
-						<div class="bottom"><span>home</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">hourglass_empty</i>
-						<div class="bottom"><span>hourglass empty</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">hourglass_full</i>
-						<div class="bottom"><span>hourglass full</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">http</i>
-						<div class="bottom"><span>http</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">https</i>
-						<div class="bottom"><span>https</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">important_devices</i>
-						<div class="bottom"><span>important devices</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">info</i>
-						<div class="bottom"><span>info</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">info_outline</i>
-						<div class="bottom"><span>info outline</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">input</i>
-						<div class="bottom"><span>input</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">invert_colors</i>
-						<div class="bottom"><span>invert colors</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">label</i>
-						<div class="bottom"><span>label</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">label_outline</i>
-						<div class="bottom"><span>label outline</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">language</i>
-						<div class="bottom"><span>language</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">launch</i>
-						<div class="bottom"><span>launch</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">lightbulb_outline</i>
-						<div class="bottom"><span>lightbulb outline</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">line_style</i>
-						<div class="bottom"><span>line style</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">line_weight</i>
-						<div class="bottom"><span>line weight</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">list</i>
-						<div class="bottom"><span>list</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">lock</i>
-						<div class="bottom"><span>lock</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">lock_open</i>
-						<div class="bottom"><span>lock open</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">lock_outline</i>
-						<div class="bottom"><span>lock outline</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">loyalty</i>
-						<div class="bottom"><span>loyalty</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">markunread_mailbox</i>
-						<div class="bottom"><span>markunread mailbox</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">motorcycle</i>
-						<div class="bottom"><span>motorcycle</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">note_add</i>
-						<div class="bottom"><span>note add</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">offline_pin</i>
-						<div class="bottom"><span>offline pin</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">opacity</i>
-						<div class="bottom"><span>opacity</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">open_in_browser</i>
-						<div class="bottom"><span>open in browser</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">open_in_new</i>
-						<div class="bottom"><span>open in new</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">open_with</i>
-						<div class="bottom"><span>open with</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">pageview</i>
-						<div class="bottom"><span>pageview</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">pan_tool</i>
-						<div class="bottom"><span>pan tool</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">payment</i>
-						<div class="bottom"><span>payment</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">perm_camera_mic</i>
-						<div class="bottom"><span>perm camera mic</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">perm_contact_calendar</i>
-						<div class="bottom"><span>perm contact calendar</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">perm_data_setting</i>
-						<div class="bottom"><span>perm data setting</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">perm_device_information</i>
-						<div class="bottom"><span>perm device information</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">perm_identity</i>
-						<div class="bottom"><span>perm identity</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">perm_media</i>
-						<div class="bottom"><span>perm media</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">perm_phone_msg</i>
-						<div class="bottom"><span>perm phone msg</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">perm_scan_wifi</i>
-						<div class="bottom"><span>perm scan wifi</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">pets</i>
-						<div class="bottom"><span>pets</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">picture_in_picture</i>
-						<div class="bottom"><span>picture in picture</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">picture_in_picture_alt</i>
-						<div class="bottom"><span>picture in picture alt</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">play_for_work</i>
-						<div class="bottom"><span>play for work</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">polymer</i>
-						<div class="bottom"><span>polymer</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">power_settings_new</i>
-						<div class="bottom"><span>power settings new</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">pregnant_woman</i>
-						<div class="bottom"><span>pregnant woman</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">print</i>
-						<div class="bottom"><span>print</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">query_builder</i>
-						<div class="bottom"><span>query builder</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">question_answer</i>
-						<div class="bottom"><span>question answer</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">receipt</i>
-						<div class="bottom"><span>receipt</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">record_voice_over</i>
-						<div class="bottom"><span>record voice over</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">redeem</i>
-						<div class="bottom"><span>redeem</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">search</i>
-						<div class="bottom"><span>search</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings</i>
-						<div class="bottom"><span>settings</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_applications</i>
-						<div class="bottom"><span>settings applications</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_backup_restore</i>
-						<div class="bottom"><span>settings backup restore</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_bluetooth</i>
-						<div class="bottom"><span>settings bluetooth</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_brightness</i>
-						<div class="bottom"><span>settings brightness</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_cell</i>
-						<div class="bottom"><span>settings cell</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_ethernet</i>
-						<div class="bottom"><span>settings ethernet</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_input_antenna</i>
-						<div class="bottom"><span>settings input antenna</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_input_component</i>
-						<div class="bottom"><span>settings input component</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_input_composite</i>
-						<div class="bottom"><span>settings input composite</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_input_hdmi</i>
-						<div class="bottom"><span>settings input hdmi</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_input_svideo</i>
-						<div class="bottom"><span>settings input svideo</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_overscan</i>
-						<div class="bottom"><span>settings overscan</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_phone</i>
-						<div class="bottom"><span>settings phone</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_power</i>
-						<div class="bottom"><span>settings power</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_remote</i>
-						<div class="bottom"><span>settings remote</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">settings_voice</i>
-						<div class="bottom"><span>settings voice</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">shop</i>
-						<div class="bottom"><span>shop</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">shop_two</i>
-						<div class="bottom"><span>shop two</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">shopping_basket</i>
-						<div class="bottom"><span>shopping basket</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">shopping_cart</i>
-						<div class="bottom"><span>shopping cart</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">speaker_notes</i>
-						<div class="bottom"><span>speaker notes</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">speaker_notes_off</i>
-						<div class="bottom"><span>speaker notes off</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">spellcheck</i>
-						<div class="bottom"><span>spellcheck</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">star_rate</i>
-						<div class="bottom"><span>star rate</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">stars</i>
-						<div class="bottom"><span>stars</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">store</i>
-						<div class="bottom"><span>store</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">subject</i>
-						<div class="bottom"><span>subject</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">supervisor_account</i>
-						<div class="bottom"><span>supervisor account</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">swap_horiz</i>
-						<div class="bottom"><span>swap horiz</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">swap_vert</i>
-						<div class="bottom"><span>swap vert</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">swap_vertical_circle</i>
-						<div class="bottom"><span>swap vertical circle</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">system_update_alt</i>
-						<div class="bottom"><span>system update alt</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">tab</i>
-						<div class="bottom"><span>tab</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">tab_unselected</i>
-						<div class="bottom"><span>tab unselected</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">theaters</i>
-						<div class="bottom"><span>theaters</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">thumb_down</i>
-						<div class="bottom"><span>thumb down</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">thumb_up</i>
-						<div class="bottom"><span>thumb up</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">thumbs_up_down</i>
-						<div class="bottom"><span>thumbs up down</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">timeline</i>
-						<div class="bottom"><span>timeline</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">toc</i>
-						<div class="bottom"><span>toc</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">today</i>
-						<div class="bottom"><span>today</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">toll</i>
-						<div class="bottom"><span>toll</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">touch_app</i>
-						<div class="bottom"><span>touch app</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">track_changes</i>
-						<div class="bottom"><span>track changes</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">translate</i>
-						<div class="bottom"><span>translate</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">trending_down</i>
-						<div class="bottom"><span>trending down</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">trending_flat</i>
-						<div class="bottom"><span>trending flat</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">trending_up</i>
-						<div class="bottom"><span>trending up</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">turned_in</i>
-						<div class="bottom"><span>turned in</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">turned_in_not</i>
-						<div class="bottom"><span>turned in not</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">update</i>
-						<div class="bottom"><span>update</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">verified_user</i>
-						<div class="bottom"><span>verified user</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">view_agenda</i>
-						<div class="bottom"><span>view agenda</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">view_array</i>
-						<div class="bottom"><span>view array</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">view_carousel</i>
-						<div class="bottom"><span>view carousel</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">view_column</i>
-						<div class="bottom"><span>view column</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">view_day</i>
-						<div class="bottom"><span>view day</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">view_headline</i>
-						<div class="bottom"><span>view headline</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">view_list</i>
-						<div class="bottom"><span>view list</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">view_module</i>
-						<div class="bottom"><span>view module</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">view_quilt</i>
-						<div class="bottom"><span>view quilt</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">view_stream</i>
-						<div class="bottom"><span>view stream</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">view_week</i>
-						<div class="bottom"><span>view week</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">visibility</i>
-						<div class="bottom"><span>visibility</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">visibility_off</i>
-						<div class="bottom"><span>visibility off</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">watch_later</i>
-						<div class="bottom"><span>watch later</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">work</i>
-						<div class="bottom"><span>work</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">youtube_searched_for</i>
-						<div class="bottom"><span>youtube searched for</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">zoom_in</i>
-						<div class="bottom"><span>zoom in</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">zoom_out</i>
-						<div class="bottom"><span>zoom out</span></div>
-					</div>
-				</div>
+		<div class="right">
+			<div class="icons_box">
+
 			</div>
-			<!-- Alert -->
-			<div class="block">
-				<div class="infoblock">
-					<span id="bAlert">Alert</span>
-				</div>
-				<div class="content">
-					<div class="icon ripple-effect">
-						<i class="material-icons">add_alert</i>
-						<div class="bottom"><span>add alert</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">error</i>
-						<div class="bottom"><span>error</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">error_outline</i>
-						<div class="bottom"><span>error outline</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">warning</i>
-						<div class="bottom"><span>warning</span></div>
-					</div>
-				</div>
-			</div>
-			<!-- AV -->
-			<div class="block">
-				<div class="infoblock">
-					<span id="bAV">AV</span>
-				</div>
-				<div class="content">
-					<div class="icon ripple-effect">
-						<i class="material-icons">add_to_queue</i>
-						<div class="bottom"><span>add to queue</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">airplay</i>
-						<div class="bottom"><span>airplay</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">album</i>
-						<div class="bottom"><span>album</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">art_track</i>
-						<div class="bottom"><span>art track</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">av_timer</i>
-						<div class="bottom"><span>av timer</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">branding_watermark</i>
-						<div class="bottom"><span>branding watermark</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">call_to_action</i>
-						<div class="bottom"><span>call to action</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">closed_caption</i>
-						<div class="bottom"><span>closed caption</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">equalizer</i>
-						<div class="bottom"><span>equalizer</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">explicit</i>
-						<div class="bottom"><span>explicit</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">fast_forward</i>
-						<div class="bottom"><span>fast forward</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">fast_rewind</i>
-						<div class="bottom"><span>fast rewind</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">featured_play_list</i>
-						<div class="bottom"><span>featured play list</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">featured_video</i>
-						<div class="bottom"><span>featured video</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">fiber_dvr</i>
-						<div class="bottom"><span>fiber dvr</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">fiber_manual_record</i>
-						<div class="bottom"><span>fiber manual record</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">fiber_new</i>
-						<div class="bottom"><span>fiber new</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">fiber_pin</i>
-						<div class="bottom"><span>fiber pin</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">fiber_smart_record</i>
-						<div class="bottom"><span>fiber smart record</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">forward_10</i>
-						<div class="bottom"><span>forward 10</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">forward_30</i>
-						<div class="bottom"><span>forward 30</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">forward_5</i>
-						<div class="bottom"><span>forward 5</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">games</i>
-						<div class="bottom"><span>games</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">hd</i>
-						<div class="bottom"><span>hd</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">hearing</i>
-						<div class="bottom"><span>hearing</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">high_quality</i>
-						<div class="bottom"><span>high quality</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">library_add</i>
-						<div class="bottom"><span>library add</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">library_books</i>
-						<div class="bottom"><span>library books</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">library_music</i>
-						<div class="bottom"><span>library music</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">loop</i>
-						<div class="bottom"><span>loop</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">mic</i>
-						<div class="bottom"><span>mic</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">mic_none</i>
-						<div class="bottom"><span>mic none</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">mic_off</i>
-						<div class="bottom"><span>mic off</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">movie</i>
-						<div class="bottom"><span>movie</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">music_video</i>
-						<div class="bottom"><span>music video</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">new_releases</i>
-						<div class="bottom"><span>new releases</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">not_interested</i>
-						<div class="bottom"><span>not interested</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">note</i>
-						<div class="bottom"><span>note</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">pause</i>
-						<div class="bottom"><span>pause</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">pause_circle_filled</i>
-						<div class="bottom"><span>pause circle filled</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">pause_circle_outline</i>
-						<div class="bottom"><span>pause circle outline</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">play_arrow</i>
-						<div class="bottom"><span>play arrow</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">play_circle_filled</i>
-						<div class="bottom"><span>play circle filled</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">play_circle_outline</i>
-						<div class="bottom"><span>play circle outline</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">playlist_add</i>
-						<div class="bottom"><span>playlist add</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">playlist_add_check</i>
-						<div class="bottom"><span>playlist add check</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">playlist_play</i>
-						<div class="bottom"><span>playlist play</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">queue</i>
-						<div class="bottom"><span>queue</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">queue_music</i>
-						<div class="bottom"><span>queue music</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">queue_play_next</i>
-						<div class="bottom"><span>queue play next</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">radio</i>
-						<div class="bottom"><span>radio</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">recent_actors</i>
-						<div class="bottom"><span>recent actors</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">remove_from_queue</i>
-						<div class="bottom"><span>remove from queue</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">repeat</i>
-						<div class="bottom"><span>repeat</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">repeat_one</i>
-						<div class="bottom"><span>repeat one</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">replay</i>
-						<div class="bottom"><span>replay</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">replay_10</i>
-						<div class="bottom"><span>replay 10</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">replay_30</i>
-						<div class="bottom"><span>replay 30</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">replay_5</i>
-						<div class="bottom"><span>replay 5</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">shuffle</i>
-						<div class="bottom"><span>shuffle</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">skip_next</i>
-						<div class="bottom"><span>skip next</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">skip_previous</i>
-						<div class="bottom"><span>skip previous</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">slow_motion_video</i>
-						<div class="bottom"><span>slow motion video</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">snooze</i>
-						<div class="bottom"><span>snooze</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">sort_by_alpha</i>
-						<div class="bottom"><span>sort by alpha</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">stop</i>
-						<div class="bottom"><span>stop</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">subscriptions</i>
-						<div class="bottom"><span>subscriptions</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">subtitles</i>
-						<div class="bottom"><span>subtitles</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">surround_sound</i>
-						<div class="bottom"><span>surround sound</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">video_call</i>
-						<div class="bottom"><span>video call</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">video_label</i>
-						<div class="bottom"><span>video label</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">video_library</i>
-						<div class="bottom"><span>video library</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">videocam</i>
-						<div class="bottom"><span>videocam</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">videocam_off</i>
-						<div class="bottom"><span>videocam off</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">volume_down</i>
-						<div class="bottom"><span>volume down</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">volume_mute</i>
-						<div class="bottom"><span>volume mute</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">volume_off</i>
-						<div class="bottom"><span>volume off</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">volume_up</i>
-						<div class="bottom"><span>volume up</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">web</i>
-						<div class="bottom"><span>web</span></div>
-					</div>
-					<div class="icon ripple-effect">
-						<i class="material-icons">web_asset</i>
-						<div class="bottom"><span>web asset</span></div>
-					</div>
-				</div>
-			</div>
-			
-			<br/><br/><br/>
 		</div>
-	</body>
-	<script type="text/javascript" src="js/ripple-effect.js"></script> 
-	<script>
-	var SelectedInfoText = false;
-	var selectedicon = false;
-	var helppabeldown = false;
-	var leftmenu = false;
-	(function($) 
-	{
-		$("#helppaneldown-button").click(function(e)
-		{
-			if(helppabeldown == false)
-			{
-				document.getElementById('helppaneldownid').style.height = '250px';
-				$('#helppaneldownid-button').html('keyboard_arrow_down');
-				helppabeldown = true;
-			}
-			else if(helppabeldown == true)
-			{
-				document.getElementById('helppaneldownid').style.height = '50px';
-				$('#helppaneldownid-button').html('keyboard_arrow_up');
-				helppabeldown = false;
-			}
-		})
-		// left menu
-		$(".menus").click(function(e)
-		{
-			if(leftmenu == false)
-			{
-				document.getElementById('leftmenu-owerlay-id').style.display = 'block';
-				setTimeout(function(){
-					document.getElementById('leftmenu-owerlay-id').style.opacity = '1';
-					document.getElementById('leftmenu-id').style.display = 'block';
-				}, 100);
-				//
-				setTimeout(function(){ document.getElementById('leftmenu-id').style.opacity = '1'; }, 150);
-				setTimeout(function(){ document.getElementById('leftmenu-id').style.left = '0px'; }, 200);
-				
-				leftmenu = true;
-			}
-		})
-		$(".hideleftmenu").click(function(e)
-		{
-			if(leftmenu == true)
-			{	
-				document.getElementById('leftmenu-id').style.left = '-250px';			
-				document.getElementById('leftmenu-owerlay-id').style.opacity = '0';
-				//
-				setTimeout(function()
-				{
-					document.getElementById('leftmenu-id').style.opacity = '0';
-					document.getElementById('leftmenu-owerlay-id').style.display = 'none';
-				}, 150);
-				//
-				setTimeout(function(){ document.getElementById('leftmenu-id').style.display = 'none'; }, 200);
-
-				leftmenu = false;
-			}
-		})
-		// icons
-		$(".icon").click(function(e)
-		{	
-			var icon = $(this);
-			
-			var ico_name = icon.find('i').text();
-			
-			var ico_name_t = icon.find('.bottom span').text();
-			if(ico_name.length > 0) $('.helppaneldown-icon-itext-class').html(ico_name);
-			if(ico_name_t.length > 0) $('.helppaneldown-icon-text-class').html(ico_name_t);
-			
-			if(selectedicon == false)
-			{
-				selectedicon = true;
-				document.getElementById('helppaneldownid').style.height = '50px';
-				$('#helppaneldownid-button').html('keyboard_arrow_up');
-				helppabeldown = false;
-			}
-		})	
-		$(".colorone").click(function(e)
-		{
-			$('.colortwo').find('div').remove();
-			$('.helppaneldown-icon-itext-class').css('color','#ffffff');
-			$('.helppaneldown-icon-text-class').css('color','#ffffff');
-			$(this).append('<div class="material-icons">done</div>');
-		})
-		$(".colortwo").click(function(e)
-		{
-			$('.colorone').find('div').remove();
-			$('.helppaneldown-icon-itext-class').css('color','#000000');
-			$('.helppaneldown-icon-text-class').css('color','#000000');
-			$(this).append('<div class="material-icons">done</div>');
-		})
-		// icons
-		
-		$ (window).scroll(function () 
-		{
-			var InfoText = $('.pod-menu-info-box').find('center');
-			if ($ (this).scrollTop () > 50) 
-			{
-				$('.menu').css('box-shadow','0px 2px 10px rgba(0, 0, 0, 0)');
-				$('.pod-menu-info-box').css('top','49px');
-				$(InfoText).css('opacity','1');
-			}
-			else if ($ (this).scrollTop () < 50)  
-			{
-				$('.menu').css('box-shadow','0px 2px 10px rgba(0, 0, 0, 0.5)');
-				$(InfoText).css('opacity','0');
-				$('.pod-menu-info-box').css('top','0px');
-			}
-			//
-			var top = $(this).scrollTop();
-			var box0 = $("#bAction").offset().top-80;
-			var box1 = $("#bAlert").offset().top-80;
-			var box2 = $("#bAV").offset().top-80;
-			//
-
-			if(top >= box0) UpdateInfoText('Action')
-			if(top >= box1) UpdateInfoText('Alert');
-			if(top >= box2) UpdateInfoText('AV');
-		});
-		
-	})(jQuery);
+	</div>
+</body>
+<script type="text/javascript">
+var 
+	content = $('.content'),
+	up_menu = $('.up_menu'),
+	overlay_b = $('.overlay'),
+	left_menu_b = $('.left_menu'),
+	left_menu = false,
+	overlay = false,
+	search = false,
+	tab_selected = 1,
 	
-	function UpdateInfoText(text)
+	icons_info = [],
+	selected_icon,
+	selected_icon_state = false
+;
+/* code */
+
+up_menu.find('.search').find('a').click(function(e)
+{
+	if(search == false)
 	{
-		var InfoText = $('.pod-menu-info-box').find('center');
-		InfoText.html(text);
+		up_menu.find('.search').find('input').css({ 'width':'200px', 'padding':'8px 5px 2px 10px' });
+		up_menu.find('.search').find('a').find('i').text('close');
+		search = true;
 	}
-	
-	</script>
+	else if(search == true)
+	{
+		up_menu.find('.search').find('input').css({ 'width':'0px', 'padding':'8px 0px 2px 0px' });
+		up_menu.find('.search').find('a').find('i').text('search');
+		search = false;
+	}
+});
+overlay_b.click(function(e)
+{
+	if(left_menu == true) fun_left_menu();
+});
+up_menu.find('.menu').click(function(e) { fun_left_menu(); });
+left_menu_b.find('.head').find('.back').click(function(e) { fun_left_menu(); });
+
+/* tab's */
+content.find('.left').find('.colors_box').find('.head').find('.one').click(function(e) { SelectTab(1); });
+content.find('.left').find('.colors_box').find('.head').find('.two').click(function(e) { SelectTab(2); });
+
+/* color's in tab's */
+
+/* icon */
+content.find('.left').find('.colors_box').find('.t_one').find('.colors').find('a').click(function(e)
+{
+	var color_box = $(this);
+	var color = color_box.css('background-color');
+	content.find('.left').find('.icon_box').find('.background_icon').find('i').css('color',color);
+});
+/* background */
+content.find('.left').find('.colors_box').find('.t_two').find('.colors').find('a').click(function(e)
+{
+	var color_box = $(this);
+	var color = color_box.css('background-color');
+	content.find('.left').find('.icon_box').find('.background_icon').css('background-color',color);
+});
+
+
+/* function's */
+var icons = false;
+function LoadIcons()
+{
+	if(icons == false)
+	{
+		$.ajax(
+		{
+			url: 'icons.txt',
+			dataType: 'text',
+			success: function (data) 
+			{
+				icons_info = data;
+				icons_info = icons_info.split(',');
+				console.log(icons_info);
+				icons = true;
+				LoadIcons();
+			}
+		});
+	}
+	else if(icons == true)
+	{
+		var icons_length = icons_info.length;
+		for (var add = 0; add < icons_length; add++) 
+		{
+			content.find('.icons_box').append('<a title="'+ icons_info[add] +'"><i class="material-icons">'+ icons_info[add] +'</i></a>');
+			add++;
+		}
+		content.find('.right').find('.icons_box').find('a').click(function(e)
+		{
+			var icon = $(this);
+			var icon_name = icon.attr('title');
+			if(icon_name == selected_icon)
+			{
+				selected_icon = '';
+				selected_icon_state = false;
+				ShowLeftColors(false);
+			}
+			else if(icon_name != selected_icon)
+			{
+				selected_icon = icon_name;
+				selected_icon_state = true;
+				
+				console.log(icon_name);
+				content.find('.left').find('.icon_box').find('.info').find('span').text(icon_name);
+				content.find('.left').find('.icon_box').find('.background_icon').find('i').text(icon_name);
+				ShowLeftColors(true);
+			}
+		});
+	}	
+}
+LoadIcons();
+
+function ShowLeftColors(state)
+{
+	if(state == true)
+	{
+		content.find('.right').css('width','70%');
+		content.find('.left').css('box-shadow', '0 0px 5px rgba(0, 0, 0, 0.5)');
+		
+	}
+	else if(state == false)
+	{
+		content.find('.right').css('width','100%');
+		content.find('.left').css('box-shadow', '0 0px 5px rgba(0, 0, 0, 0)');
+	}
+}
+
+function SelectTab(value)
+{
+	var 
+		span = content.find('.left').find('.colors_box').find('.head').find('span'),
+		tab_one = content.find('.left').find('.colors_box').find('.t_one'),
+		tab_two = content.find('.left').find('.colors_box').find('.t_two')
+	;
+	switch(value)
+	{
+		case 1:
+		{
+			span.css('left','0');
+			tab_one.css('right','0');
+			tab_two.css('right','-100%');
+			break;
+		}
+		case 2:
+		{
+			span.css('left','50%');
+			tab_one.css('right','100%');
+			tab_two.css('right','0');
+			break;
+		}
+	}
+	tab_selected = value;
+}
+
+function fun_left_menu()
+{
+	if(left_menu == false)
+	{
+		left_menu_b.css('left', '0px');
+		left_menu = true;
+		fun_overlay(true);
+	}
+	else if(left_menu == true)
+	{
+		left_menu_b.css('left', '-260px');
+		left_menu = false;
+		fun_overlay(false);
+	}
+}
+function fun_overlay(state)
+{
+	if(state == true)
+	{
+		overlay_b.css('display','block');
+		setTimeout(function() { overlay_b.css('opacity','1'); }, 100);
+		overlay = true;
+	}
+	else if(state == false)
+	{
+		overlay_b.css('opacity','0');
+		setTimeout(function() { overlay_b.css('display','none'); }, 500);
+		overlay = false;
+	}
+}
+</script>
+<script type="text/javascript" src="js/ripple-effect.js"></script> 
 </html>
